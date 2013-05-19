@@ -8,7 +8,7 @@ require 'open-uri'
 # Each city takes the form of: http://www.maine.gov/local/town.php?t=Millinocket
 
 counter = 0
-CSV.open("me-municipal-urls.csv", "w") do |csv|
+CSV.open("data/me-municipal-urls.csv", "w") do |csv|
   counties = [
               'Androscoggin',
               'Aroostook',
