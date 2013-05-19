@@ -11,7 +11,7 @@ states_url = "https://gist.github.com/driki/5607866/raw/a05d8ff382ae4c7c50a6a3aa
 states_response = HTTPClient.get(states_url)
 
 counter = 0
-CSV.open("city_urls.csv", "w") do |csv|
+CSV.open("sba-urls.csv", "w") do |csv|
   JSON.parse(states_response.body)["states"].each do |state|
     state_abbrv = state.keys.first.downcase
     puts "Getting cities for: #{state_abbrv}"
