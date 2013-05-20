@@ -1,3 +1,4 @@
+abbreviation,municipality name,municipality_url
 ak,anchorage,http://www.muni.org/
 ak,bethel,http://www.cityofbethel.org/
 ak,coffman cove,http://www.coffmancove.org/
@@ -5,7 +6,7 @@ ak,cordova,http://www.biglake-ak.com/
 ak,craig,http://www.craigak.com/
 ak,delta junction,http://www.ci.delta-junction.ak.us/
 ak,dillingham,http://www.ci.dillingham.ak.us/
-ak,fairbanks,http://www.ci.fairbanks.ak.us/
+ak,fairbanks,http://www.fairbanksalaska.us/
 ak,haines,http://www.haines.ak.us/
 ak,homer,http://www.ci.homer.ak.us/
 ak,juneau,http://www.juneau.org/
@@ -1133,7 +1134,7 @@ ga,gainesville,http://www.gainesville.org/
 ga,gray,http://www.cityofgrayga.net/
 ga,griffin,http://www.cityofgriffin.com/
 ga,hahira,http://www.hahira.ga.us/
-ga,hampton,"http://hampton.georgia.gov/05/home/0,2230,8346576,00.html;jsessionid=9CAAAA25E44ACA16FF2CC28E1473B1EE"
+ga,hampton,"http://georgia.gov/cities-counties/hampton"
 ga,hapeville,http://www.hapeville.org/
 ga,hawkinsville,http://www.hawkinsvillega.net/
 ga,hinesville,http://www.cityofhinesville.org/
