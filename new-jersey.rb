@@ -3,6 +3,8 @@ require 'nokogiri'
 require 'open-uri'
 
 # Bulk download scraper for New Jersey Municipalities.
+# Data collected from:
+# => http://www.state.nj.us/nj/gov/county/localgov.html
 
 doc = Nokogiri::HTML(open('http://www.state.nj.us/nj/gov/county/localgov.html'))
 counter = 0

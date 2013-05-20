@@ -1,0 +1,139 @@
+require 'csv'
+require 'httpclient'
+require 'nokogiri'
+require 'open-uri'
+
+# Bulk download scraper for California Municipalities.
+# Data collected from: http://events.cacities.org/cgi-shl/TWServer.exe?Run:CITYWEB
+
+counter = 0
+pages = 48
+CSV.open("data/ca-municipal-urls.csv", "w") do |csv|
+  url = "http://events.cacities.org/cgi-shl/TWServer.exe?Run:CITYWEB_1"
+
+  doc = Nokogiri::HTML(open(url))
+  city_name_xpath = '/html/body/table/tbody/tr[3]/td[1]/font'
+  city_url_xpath = '/html/body/table/tbody/tr[3]/td[2]/font'
+
+  municipalities = doc.xpath("//option")
+  municipalities.each do |muni|
+    puts "Crawling #{muni.text}"
+    http = HTTPClient.new
+    response = http.post 'http://events.cacities.org/cgi-shl/TWServer.exe?Run:MEMLOOK_1', 'Company' => city.text
+    muni_doc = Nokogiri::HTML.parse(response.body)
+    muni_url = muni_doc.xpath("/html/body/table/tbody/tr[2]/td[2]/font/a")
+    puts "ca :: #{muni.text.downcase} :: #{url}"
+    # csv << ["me", muni.text.downcase, url]
+    counter += 1
+  end
+end
+puts "Scraped #{counter} municipal urls."
+require 'csv'
+require 'nokogiri'
+require 'open-uri'
+
+# Bulk download scraper for New Hampshire Municipalities.
+# Data collected from: # http://www.nh.gov/municipal/
+
+counter = 0
+CSV.open("data/nh-municipal-urls.csv", "w") do |csv|
+  doc = Nokogiri::HTML(open("http://www.nh.gov/municipal"))
+  urls = doc.xpath("//tr[4]/td/table/tbody/tr[4]/td/a")
+  urls.each do |muni|
+    puts muni
+    unless muni.text.nil?
+      puts "Crawling #{muni.text}"
+      # muni_doc = Nokogiri::HTML(open("http://www.maine.gov/local/town.php?t=#{URI::encode(muni.text)}"))
+      # url = muni_doc.xpath("//a[text()='Official Website']/@href")
+      # puts "nh :: #{muni.text.downcase} :: #{url}"
+      # csv << ["nh", muni.text.downcase, url]
+      counter += 1
+    end
+  end
+end
+puts "Scraped #{counter} municipal urls."require 'csv'
+require 'nokogiri'
+require 'open-uri'
+
+# Bulk download scraper for Maine Municipalities.
+# Data collected from: http://www.maine.gov/local/
+# There are 16 Counties in our State Cumberland and Franklin...
+# Each city takes the form of: http://www.maine.gov/local/town.php?t=Millinocket
+
+counter = 0
+CSV.open("data/me-municipal-urls.csv", "w") do |csv|
+  counties = [
+              'Androscoggin',
+              'Aroostook',
+              'Cumberland',
+              'Franklin',
+              'Hancok',
+              'Kennebec',
+              'Knox',
+              'Lincoln',
+              'Oxford',
+              'Penobscot',
+              'Piscataquis',
+              'Sagadahoc',
+              'Somerset',
+              'Waldo',
+              'Washington',
+              'York'
+            ]
+  counties.each do |county|
+    puts "Crawling #{county}"
+    county_doc = Nokogiri::HTML(open("http://www.maine.gov/local/county.php?c=#{county.downcase}"))
+    urls = county_doc.xpath("//dd[1]/a")
+    urls.each do |muni|
+      puts "Crawling #{muni.text}"
+      muni_doc = Nokogiri::HTML(open("http://www.maine.gov/local/town.php?t=#{URI::encode(muni.text)}"))
+      url = muni_doc.xpath("//a[text()='Official Website']/@href")
+      puts "me :: #{muni.text.downcase} :: #{url}"
+      csv << ["me", muni.text.downcase, url]
+      counter += 1
+    end
+  end
+end
+puts "Scraped #{counter} municipal urls."
+require 'csv'
+require 'nokogiri'
+require 'open-uri'
+
+# Bulk download scraper for New Jersey Municipalities.
+
+doc = Nokogiri::HTML(open('http://www.state.nj.us/nj/gov/county/localgov.html'))
+counter = 0
+CSV.open("data/nj-municipal-urls.csv", "w") do |csv|
+  doc.xpath('//li/ul/li/a').each do |link|
+    puts "nj :: #{link.content.downcase} :: #{link['href']}"
+    csv << ["nj", link.content.downcase, link['href']]
+    counter += 1
+  end
+end
+puts "Scraped #{counter} municipal urls."require 'csv'
+require 'httpclient'
+require 'json'
+
+# Bulk download scraper for U.S. Small Business Association API
+# http://www.sba.gov/about-sba-services/7617
+# Converts the JSON into a single CSV
+
+base_url = "http://api.sba.gov/geodata/city_links_for_state_of/"
+states_url = "https://gist.github.com/driki/5607866/raw/a05d8ff382ae4c7c50a6a3aa58c877175c1847d6/states.json"
+states_response = HTTPClient.get(states_url)
+
+counter = 0
+CSV.open("sba-urls.csv", "w") do |csv|
+  JSON.parse(states_response.body)["states"].each do |state|
+    state_abbrv = state.keys.first.downcase
+    puts "Getting cities for: #{state_abbrv}"
+    response = HTTPClient.get(base_url+"#{state_abbrv}.json")
+    cities = JSON.parse(response.body)
+    cities.each do |city|
+      puts "#{state_abbrv} :: #{city["name"].downcase} :: #{city["url"]}"
+      csv << [state_abbrv, city["name"].downcase, city["url"]]
+      counter += 1
+    end
+  end
+  puts "Scraped #{counter} city urls."
+end

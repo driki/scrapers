@@ -3,9 +3,12 @@ require 'nokogiri'
 require 'open-uri'
 
 # Bulk download scraper for Maine Municipalities.
-# Data collected from: http://www.maine.gov/local/
 # There are 16 Counties in our State Cumberland and Franklin...
-# Each city takes the form of: http://www.maine.gov/local/town.php?t=Millinocket
+# CURRENT DATA SOURCES:
+#   => http://www.maine.gov/local/
+# POSSIBLE DATA SOURCES:
+#   http://www.memun.org/public/local_govt/
+#   http://citytown.info/Maine.htm
 
 counter = 0
 CSV.open("data/me-municipal-urls.csv", "w") do |csv|
