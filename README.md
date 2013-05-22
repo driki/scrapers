@@ -1,6 +1,6 @@
 Individual scrapers are located in the root. Each scraper should output the data into the data/ directory. The structure and consistency of the file naming will evolve. 
 
-The merged-municipalities.csv file is created by running each scraper, then running merging and deduping the resulting files. Try something like:
+The merged-municipalities.csv file is created by running each scraper, then merging, deduping and sorting the resulting files. Try something like:
 
     cat $(ls -t) > merged-municipalities.csv
     uniq merged-municipalities.csv
