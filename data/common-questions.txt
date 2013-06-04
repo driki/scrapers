@@ -1,0 +1,88 @@
+# synonyms
+syn: file,get,obtain,find,
+syn: town councilor, selectboard, selectmen
+
+# Payment related
+How do I pay my tax bill
+
+# School related
+When does school start
+When does school end
+Is there school today
+How do I register my kid for school
+
+# Town Clerk
+How do I register to vote
+How do I run for office
+How do I get a birth certificate
+How do I get a marriage license
+How do I get a death certificate
+How do I get a licenses
+How do I get a permit
+How do I file a building permit
+Where do I vote?
+Who has to file a business certificate?
+How much does a business certificate cost?
+What is needed to file a business certificate?
+How can I obtain the business certification form?
+Will I get a tax i.d. number when I file a business certificate?
+How often does a business certificate have to be renewed?
+What if the business address changes?
+What if the ownership of the business changes?
+Who is my town councilor
+
+# Time, office hour related
+When is the skating rink open
+What hours is town hall open
+When is the trash picked up on my street
+When does the parking ban start
+What are the hours of the recreation department
+
+# Hazardous trash
+
+# Council on Aging/Senior Center
+How do you get to the Senior Center?
+Who is considered a senior?
+What are the Senior Center's operating hours?
+
+# Emergency Management
+As a resident, what website should I access for info
+What is the phone number of the Police Department ?
+What if there is a power outage ?
+I have a dog. What precautions should I take ?
+What if a fire occurs when I am sleeping ?
+
+# Fire department
+How do I dispose of old smoke alarms?
+Where do my smoke and Carbon Monoxide detectors need to be installed?
+Why did you send a fire engine when I called for an ambulance?
+What do I do after I suffer a fire in my home?
+I bought a chiminea from a store in Watertown, why can't I use it at my home in Watertown?
+Where can I get child locator decals for my home?
+Why is my smoke alarm making a funny sound (chirping)?
+
+# Historic District Commission
+What is the Mount Auburn Street Historic District?
+Why do we have historic districts?
+What is a Historic District Commission?
+Who serves on the Historic District Commission and what do they regulate?
+Where is the Mount Auburn Street Historic District?
+What if I want to make changes to my home?
+How Do I File an Application?
+What if I have questions?
+
+# Health Department
+What should I do if my pet is lost?
+What guidelines are provided for flooding in my home?
+What food safety guidelines are provided for power failure in my home?
+
+####################
+# QUESTIONS NEARLY ZERO PEOPLE ASK
+####################
+
+# Charter Review Commission questions
+Where can I find a copy of the Charter ?
+Who Can Participate in the Charter Review ?
+How Do I Keep Current with the Review Process ?
+Why Should I Participate in the Charter Review ?
+
