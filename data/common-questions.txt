@@ -1,6 +1,6 @@
 # synonyms
 syn: file,get,obtain,find,
-syn: town councilor, selectboard, selectmen
+syn: town councilor, selectboard, selectmen, councilor
 
 # Payment related
 How do I pay my tax bill
@@ -31,6 +31,21 @@ What if the business address changes?
 What if the ownership of the business changes?
 Who is my town councilor
 
+# Treasurer / Collector
+How do I pay my tax bill?
+When are property tax bills due?
+If I pay my property tax bill late, will I be charged any interest penalties?
+Can I pay my tax bill online?
+If I sell or trade-in my motor vehicle after I paid my motor vehicle excise tax, can I receive a refund?
+How do I pay my water bill?
+How do I pay my sewer bill?
+Can I pay my water bill online?
+Can I pay my sewer bills online?
+What are the town rules regarding all night parking on town streets during the winter months?
+If my license or registration is marked for non-renewal at the Registry of Motor Vehicles (RMV) due to outstanding parking tickets or unpaid excise amounts, what should I do?
+What are the hours of operation for parking meters on the STREET?
+What are parking meter hours of operation in MUNICIPAL PARKING LOTS?
+
 # Time, office hour related
 When is the skating rink open
 What hours is town hall open
@@ -51,6 +66,30 @@ What is the phone number of the Police Department ?
 What if there is a power outage ?
 I have a dog. What precautions should I take ?
 What if a fire occurs when I am sleeping ?
+
+# Historic District Commission
+What is the Mount Auburn Street Historic District?
+Why do we have historic districts?
+What is a Historic District Commission?
+Who serves on the Historic District Commission and what do they regulate?
+Where is the Mount Auburn Street Historic District?
+What if I want to make changes to my home?
+How Do I File an Application?
+
+# Health Department
+What should I do if my pet is lost?
+What guidelines are provided for flooding in my home?
+What food safety guidelines are provided for power failure in my home?
+
+# Zoning
+How do I find my Zoning District?
+What do I have to do to add a deck or addition to my home?
+How do I know what setbacks are required?
+What is a Plot Plan?
+Can I run a business in my home?
+What are the rules on fencing and sheds?
+Do I need a permit to enlarge or extend my driveway?
+What is Reasonable Accommodation?
 
 # Fire department
 How do I dispose of old smoke alarms?
