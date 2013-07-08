@@ -2,6 +2,25 @@
 syn: file,get,obtain,find,
 syn: town councilor, selectboard, selectmen, councilor
 
+# Somerville, MA top requested pages on their website
+City Hall Hours and Directions
+Pay Bills Online
+Employee Telephone and E-Mail Lookup
+Health - Unwanted Medication & Sharps Drop-Off Kiosks
+Watch Aldermen and School Committee Meetings
+Forms Library
+Community Resources
+Environmental Service Guide, With Yard Waste Calendar
+Public Meeting Agendas and Minutes
+Sign Up for Street Sweeping Alerts
+Trash Disposal and Recycling Procedures
+Residential Exemption
+City Video Galleries
+City Photo Galleries
+Statutory Exemptions and Qualifications
+City Ordinances
+Frequently Asked Questions
+
 # Payment related
 How do I pay my tax bill
 
