@@ -1,0 +1,14 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "title": "Permits, certificates & licenses",
+      "short_description": "File a building permit and other forms"
+    },
+    {
+      "id": 2,
+      "title": "Bills, money & taxes",
+      "short_description": "Pay parking tickets, taxes and other bills"
+    }
+  ]
+}
