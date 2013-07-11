@@ -41,6 +41,7 @@
     {
       "id": 8,
       "title": "Water & Sewer",
+      "slug": "water-sewer",
       "short_description": "Includes water quality, report an issue"
     },
     {
