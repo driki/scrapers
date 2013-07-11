@@ -2,6 +2,7 @@
   "topics": [
     {
       "id": 1,
+      "slug": "permits-certificates-licenses",
       "title": "Permits, certificates & licenses",
       "short_description": "File a building permit and other forms"
     },
