@@ -9,6 +9,41 @@
       "id": 2,
       "title": "Bills, money & taxes",
       "short_description": "Pay parking tickets, taxes and other bills"
+    },
+    {
+      "id": 3,
+      "title": "Business and self-employed",
+      "short_description": "Tools and guidance for businesses"
+    },
+    {
+      "id": 4,
+      "title": "Trash, waste & recycling",
+      "short_description": "Pickup days, rules and hazardous disposal"
+    },
+    {
+      "id": 5,
+      "title": "Education & learning",
+      "short_description": "Includes registration, districts and calendars"
+    },
+    {
+      "id": 6,
+      "title": "Recreation & healthy living",
+      "short_description": "Includes activities, parks and rules"
+    }
+    {
+      "id": 7,
+      "title": "Roads, streetlights & signs",
+      "short_description": "Report potholes, broken lights"
+    },
+    {
+      "id": 8,
+      "title": "Water & Sewer",
+      "short_description": "Includes water quality, report an issue"
+    },
+    {
+      "id": 9,
+      "title": "Meetings, agendas & minutes",
+      "short_description": "About meetings, notices and minutes"
     }
   ]
 }
