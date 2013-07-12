@@ -10,11 +10,13 @@
     {
       "id": 2,
       "title": "Bills, money & taxes",
+      "slug": "bills-money-taxes",
       "short_description": "Pay parking tickets, taxes and other bills"
     },
     {
       "id": 3,
       "title": "Business and self-employed",
+      "slug": "business-and-self-employed",
       "short_description": "Tools and guidance for businesses"
     },
     {
@@ -26,16 +28,19 @@
     {
       "id": 5,
       "title": "Education & learning",
+      "slug": "education-learning",
       "short_description": "Includes registration, districts and calendars"
     },
     {
       "id": 6,
       "title": "Recreation & healthy living",
+      "slug": "recreation-healthy-living",
       "short_description": "Includes activities, parks and rules"
     },
     {
       "id": 7,
       "title": "Roads, streetlights & signs",
+      "slug": "roads-streetlights-signs",
       "short_description": "Report potholes, broken lights"
     },
     {
@@ -47,6 +52,7 @@
     {
       "id": 9,
       "title": "Meetings, agendas & minutes",
+      "slug": "meetings-agendas-minutes",
       "short_description": "About meetings, notices and minutes"
     }
   ]
